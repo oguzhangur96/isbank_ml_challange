@@ -100,6 +100,9 @@ def enhance_data(df):
     return df
 
 #%%
+# This functions changed manually
+# .mean(), .median(), .std()
+# index_group = ['customer','sektor','tarih'] could be changed
 def expanding_features():
     # Reordering test columns
     test = test.reindex(train.columns, axis=1)
